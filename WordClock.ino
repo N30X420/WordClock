@@ -62,8 +62,8 @@ void loop() {
   setTimeLeds(Hour, fiveMin, singleMinutes, Red, Green, Blue);
   updateMenu(buttons, now, menu, Hours, Minutes, Seconds, Red, Green, Blue);
   LCD(now, menu, Red, Green, Blue);
-  
 
 
-  
+
+
 }
