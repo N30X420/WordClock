@@ -1,10 +1,6 @@
-#include <LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
 #include <DS3231.h>
 #include <Adafruit_NeoPixel.h>
-
-#include "lcd.h"
-#include "menu.h"
-#include "timefunc.h"
 
 #define PIN 8
 #define NUMPIXELS 114
@@ -41,6 +37,9 @@ void setup() {
   pinMode(buttons[3], INPUT_PULLUP);
 }
 
+#include "lcd.h"
+#include "menu.h"
+#include "timefunc.h"
 
 void loop() {
   String now = rtc.getTimeStr((FORMAT_LONG));
