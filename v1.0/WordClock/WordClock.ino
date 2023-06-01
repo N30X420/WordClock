@@ -28,8 +28,8 @@ void setup() {
   pixels.begin();
   pixels.show();
 
-  rtc.setTime(01, 01, 0);
-  rtc.setDate(01, 06, 2023);
+  //rtc.setTime(01, 01, 0);
+  //rtc.setDate(01, 06, 2023);
 
   pinMode(buttons[0], INPUT_PULLUP);
   pinMode(buttons[1], INPUT_PULLUP);

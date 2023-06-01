@@ -1,9 +1,10 @@
+
 void updateMenu(byte buttons[], String now, int menuI, int HoursI, int MinutesI, int SecondsI, int RedI, int GreenI, int BlueI) {
   const byte nrButtons = 4;
   int menusize = 2;
 
   for (int n = 0; n < nrButtons; n++) {
-    if (digitalRead(buttons[n]) == HIGH) {
+    if (digitalRead(buttons[n]) == LOW) {
       switch (n) {
         case 0:
           menu = menu + 1;

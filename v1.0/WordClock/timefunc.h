@@ -23,17 +23,17 @@ void setTimeLeds(int HourI, int fiveMinI, int singleMinutesI, int RedI, int Gree
   int twee [4] = {65, 64, 63, 62 };
   int drie [4] = {58, 57, 56, 55 };
   int vier [4] = {66, 67, 68, 69 };
-  int vijf [4] = {70, 71, 72, 73 };
+  int vijf2 [4] = {70, 71, 72, 73 };
   int zes [3] = {74, 75, 76 };
   int zeven [5] = {87, 86, 85, 84, 83 };
   int acht [4] = {88, 89, 90, 91};
   int negen [5] = {81, 80, 79, 78, 77 };
-  int tien [4] = {92, 93, 94, 95 };
+  int tien2 [4] = {92, 93, 94, 95 };
   int elf [3] = {96, 97, 98 };
 
   int minuteDots[4] = {110, 111, 112, 113};
 
-  boolean helpWord[][9] = {
+  boolean helpword[][9] = {
     {false, false, false, false, false, false, false, false, true},
     {true, false, false, true, false, false, false, false, false},
     {false, true, false, true, false, false, false, false, false},
@@ -45,7 +45,7 @@ void setTimeLeds(int HourI, int fiveMinI, int singleMinutesI, int RedI, int Gree
     {false, true, false, true, false, false, false, true, false},
     {false, false, true, false, false, false, true, false, false},
     {false, true, false, false, false, true, false, false, false},
-    {true, false, false, false, false, true, false, false, false},
+    {true, false, false, false, false, true, false, false, false}
 
   };
 
@@ -108,110 +108,110 @@ void setTimeLeds(int HourI, int fiveMinI, int singleMinutesI, int RedI, int Gree
 
     case 1:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Een, 3, RedI, GreenI, BlueI);
+        ledSwitch(een, 3, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Twee, 4, RedI, GreenI, BlueI);
+        ledSwitch(twee, 4, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 2:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Twee, 4, RedI, GreenI, BlueI);
+        ledSwitch(twee, 4, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Drie, 4, RedI, GreenI, BlueI);
+        ledSwitch(drie, 4, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 3:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Drie, 4, RedI, GreenI, BlueI);
+        ledSwitch(drie, 4, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Vier, 4, RedI, GreenI, BlueI);
+        ledSwitch(vier, 4, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 4:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Vier, 4, RedI, GreenI, BlueI);
+        ledSwitch(vier, 4, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Vijf, 4, RedI, GreenI, BlueI);
+        ledSwitch(vijf, 4, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 5:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Vijf, 4, RedI, GreenI, BlueI);
+        ledSwitch(vijf, 4, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Zes, 3, RedI, GreenI, BlueI);
+        ledSwitch(zes, 3, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 6:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Zes, 3, RedI, GreenI, BlueI);
+        ledSwitch(zes, 3, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Zeven, 5, RedI, GreenI, BlueI);
+        ledSwitch(zeven, 5, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 7:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Zeven, 5, RedI, GreenI, BlueI);
+        ledSwitch(zeven, 5, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Acht, 4, RedI, GreenI, BlueI);
+        ledSwitch(acht, 4, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 8:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Acht, 4, RedI, GreenI, BlueI);
+        ledSwitch(acht, 4, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Negen, 5, RedI, GreenI, BlueI);
+        ledSwitch(negen, 5, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 9:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Negen, 5, RedI, GreenI, BlueI);
+        ledSwitch(negen, 5, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Tien, 4, RedI, GreenI, BlueI);
+        ledSwitch(tien, 4, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 10:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Tien, 4, RedI, GreenI, BlueI);
+        ledSwitch(tien, 4, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Elf, 3, RedI, GreenI, BlueI);
+        ledSwitch(elf, 3, RedI, GreenI, BlueI);
       }
       break;
 
 
     case 11:
       if (fiveMinI < hourCutOff) {
-        ledSwitch(Elf, 3, RedI, GreenI, BlueI);
+        ledSwitch(elf, 3, RedI, GreenI, BlueI);
       }
       else {
-        ledSwitch(Twaalf, 6, RedI, GreenI, BlueI);
+        ledSwitch(twaalf, 6, RedI, GreenI, BlueI);
       }
       break;
   }
