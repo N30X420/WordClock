@@ -4,6 +4,7 @@ Arduino Word Clock
 ## Usage
 > [!NOTE]
 > ***This only applies to software v1.x***
+
 Function Set Date runs on startup.
 If no input is received within 30 seconds the date stored in the RTC module will be used.
 Otherwise set your date manually and confirm with first button (S)
